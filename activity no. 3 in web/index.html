@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.myWeblog.com</title>
+     <link rel="stylesheet" href="ray.css">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 style="font-size: 60px"><span style="font-family:'Courier New'" >&nbsp;My <span style="color:white">Weblog</span></span></h1>
+        </header>
+
+        <div id="main">
+
+        <div id="sidebar">
+            <form action="">
+                <input type="text" placeholder="Search...">
+                <button type="submit">search</button>
+              </form>
+
+             
+        
+        </div>
+
+
+        <div id="sidebar2">
+        <div class="ll">
+        
+            <p>&nbsp;Things that i loves to do:</p>
+            <h1 style="font-size: 14px">&nbsp;&nbsp;Singing</h1>
+            <h1 style="font-size: 14px">&nbsp;&nbsp;Sleeping</h1>
+            <h1 style="font-size: 14px">&nbsp;&nbsp;Eating</h1>
+            
+          
+            <form>
+              <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+              <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+              <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+              <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+              <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+            </form>
+        </div>
+    </div>
+        <div id="column1">
+            <h1 style="font-family:'Courier New'"> &nbsp;&nbsp;Post</h1>
+            <a onclick="resizeImage()" href="#" >&nbsp;&nbsp;<img src="9.jpg" id="img1" width="200px"/><br/></a>
+            <h2></h2>
+            <script src="i.js"></script>
+            <h3>&nbsp;&nbsp;&nbsp;Ray Malapitan Bantugon</h3>
+            <h4>&nbsp;&nbsp;BSIT-3101</h4>
+            <h5>&nbsp;&nbsp;Saguing Mabini Batangas</h5>
+            <a onclick="remove()" href="#"> &nbsp;&nbsp;Show more...</a>
+
+            <script>
+                function remove(){
+                    document.querySelector('.ll').remove();
+                }
+        
+            </script>
+        </div>
+        </div>
+
+        <footer>
+            <h1 style="font-size: 15px"> &nbsp;&nbsp;&nbsp;&nbsp;"“Your talent determines what you can do. Your motivation determines how much you are willing to do. Your attitude determines how well you do it.”</span></h1>
+            <h2 style="font-size: 12px">&nbsp;&nbsp;&nbsp;—Lou Holtz</h1>
+        </footer>
+    </div>
+    
+</body>
+</html>
